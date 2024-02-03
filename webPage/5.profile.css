@@ -1,0 +1,280 @@
+
+body {
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://wallpapers.com/images/hd/galaxy-space-background-1080-x-1920-cvnxsk3ml8jdyzfa.jpg); 
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#title{
+    --border-right: 6px;
+    --text-stroke-color: #37FF8B;
+    --fs-size: 1em;
+    letter-spacing: 3px;
+    text-decoration:double;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    text-shadow: 0 0 30px #37FF8B;
+    margin: 0; 
+  }
+  
+  #header {
+    position: relative;
+  }
+   
+    
+  .navbar {
+    display: flex;
+    position: fixed;
+    color: white;
+    top: 0;
+    width: 100%;
+    text-align: center; 
+    justify-content: space-evenly; 
+    backdrop-filter: blur(10px);
+    flex-wrap: nowrap;
+  } 
+  
+  
+  .navbar a {
+    font-size: 1em;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    margin-right: 2em;
+    text-decoration: none;
+  }
+  
+  .navbar button:focus,
+  .navbar button:hover {
+    color: #fff;
+  }
+  
+  .navbar button:focus:after,
+  .navbar button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .navbar button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+  .menu__item img {
+    height: 5rem;
+    border-radius: 50%;
+  }
+  
+  #menu__toggle {
+    opacity: 0;
+  }
+  #menu__toggle:checked + .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menu__toggle:checked + .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 0 !important;
+  }
+  .menu__btn {
+    position: fixed;
+    top: 3.5rem;
+    left: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #616161;
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 200px;
+    height: 100%;
+    margin: 0;
+    padding: 100px 0;
+    z-index: 1;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+  }
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+  }
+  .menu__item:hover {
+    transform: scale(1.2);
+    background-color: transparent;
+  }
+  
+  #hiddenMsg{
+    color: rgba(0, 0, 0, 0.8);
+  }
+  #hiddenMsg:hover {
+    color: red;
+  }
+
+  #profileBox{
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 6em 2em 6em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 32em;
+    top: 4em;
+    border: rgb(58, 47, 47) 1px solid;
+  }
+
+  #backgroundImage{
+    background-image: url("https://i.imgur.com/bDePe5R.jpg");
+    background-size: cover;
+    background-position:0px;
+    position: absolute;
+    border: white solid 2px;
+    top: 5rem;
+    height: 10rem;
+    width: 99.7%;
+  }
+  #image{
+    background-image: url("https://i.imgur.com/V1gIGAi.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: block;
+    top: 11rem;
+    left: 3rem;
+    height: 10rem;
+    width: 10rem;
+    border: white solid 2px;
+    border-radius: 50%;
+  }
+
+  #username{
+    display: block;
+    position: absolute;
+    font-size: 2rem;
+    top: 0rem;
+    left: 40%;
+    color:rgb(255, 255, 255);
+    text-decoration: underline;
+  }
+
+  #bio{
+    position:relative;
+    display: block;
+    height: fit-content;
+    width: fit-content;
+    top: 8rem;
+    left: 22rem;
+    font-size: 1.5rem;
+    padding: 10px;
+    color: #fff;
+    border: rgb(58, 47, 47) 1px solid;
+  }
+
+  .socialButtons {
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    right: auto;
+    left: 40%;
+    bottom: 20px;
+    display: flex;
+    justify-content:center;
+  }
+  .socialButtons img{
+     margin: 10px;
+    border-radius: 50%;
+   
+  }
+  @media screen and (max-width: 768px) {
+    .navbar button {
+        font-size: 0.8em; 
+    }
+    #profileBox{
+        height: 25rem;
+        margin: 0;
+        
+    }
+    #image{
+        top: 7rem;
+        left: 1rem;
+        height: 5rem;
+        width: 5rem;
+    }
+    #username{
+        font-size: 1.2rem;
+        top: 0rem;
+        
+    }
+    #backgroundImage{
+       top: 5rem;
+       height: 5rem;
+       width: 100%;
+    }
+    #bio{
+       top: 8rem;
+       left: 2rem;
+       padding: 10px;
+       font-size: 1rem;
+    }
+}
