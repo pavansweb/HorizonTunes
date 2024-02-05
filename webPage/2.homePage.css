@@ -1,7 +1,7 @@
 
 
 *{
-  cursor : all;
+  cursor : none;
 }
 body {
   background-image: url("https://i.imgur.com/2rZDjQ1.jpg");
@@ -465,7 +465,9 @@ h2{
   color: #888;
 }
 
-
+.cursor{
+  z-index: 3;
+}
 
 
 

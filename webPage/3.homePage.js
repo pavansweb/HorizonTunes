@@ -1,3 +1,4 @@
+
 import songDatabase from './songsDatabase.js';
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -14,13 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const body = document.getElementsByTagName('body')[0];
     
     console.log("Ummm you shouldnt be checking this websites console but since u are here lemme show some useless info :-");
-    // Log a collapsible group with song titles
-    console.groupCollapsed("Total Songs");
-    songDatabase.forEach(song => console.log(song.title));
-    console.groupEnd();
-
-
-    console.log(songDatabase.title)
+    console.log("Total Songs",songDatabase);
 
     musicPlayer.style.display = 'none';
 
@@ -129,9 +124,7 @@ songBoxes.forEach(function (songBox, index) {
 function filterSongsByCategory(category) {
     const filteredSongs = songDatabase.filter(song => song.category === category);
     console.log(category)
-    console.groupCollapsed(f`${category} Songs`);
-    songDatabase.forEach(song => console.log(song.title));
-    console.groupEnd();
+    console.log(filteredSongs);
     return filteredSongs;
     
 }
@@ -461,7 +454,6 @@ function updatePlayingCategory(category) {
                 cursor.classList.remove("expand");
             }, 500)
         })
-
 
         //<the end?>
 });
