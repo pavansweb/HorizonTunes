@@ -385,6 +385,18 @@ function updatePlayingCategory(category) {
         // Update the tooltip position and content
         updateTooltip(currentTime, duration);
     }
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "ArrowRight") {
+          // Move forward by 5 seconds (adjust as needed)
+          audioPlayer.currentTime += 5;
+          updateProgressBar();
+        } else if (event.key === "ArrowLeft") {
+          // Move backward by 5 seconds (adjust as needed)
+          audioPlayer.currentTime -= 5;
+          updateProgressBar();
+        }
+      });
+      
 
     function togglePlayPause() {
         if (isPlaying) {
@@ -427,6 +439,50 @@ function updatePlayingCategory(category) {
         progressBarTooltip.textContent = tooltipText;
     }
 
+
+
+ 
+const volumeSlider = document.getElementById("volumeSlider");
+
+// Function to increase volume
+function increaseVolume() {
+  if (audioPlayer.volume < 1) {
+    audioPlayer.volume += 0.1;
+    volumeSlider.value = audioPlayer.volume * 100;
+  }
+}
+
+// Function to decrease volume
+function decreaseVolume() {
+  if (audioPlayer.volume > 0) {
+    audioPlayer.volume -= 0.1;
+    volumeSlider.value = audioPlayer.volume * 100;
+  }
+}
+
+// Event listener for arrow keys
+document.addEventListener("keydown", function(event) {
+
+  if (event.key === "ArrowUp" || event.key === "ArrowDown") {
+    // Prevent the default behavior of the up and down arrow keys
+    event.preventDefault();
+    }
+
+  if (event.key === "ArrowUp") {
+    increaseVolume();
+  } else if (event.key === "ArrowDown") {
+    decreaseVolume();
+  }
+  
+});
+
+// Event listener for slider input
+volumeSlider.addEventListener("input", function() {
+  audioPlayer.volume = volumeSlider.value / 100;
+});
+
+      
+    
     //<loading>
 
     const loadingSpinner = document.querySelector('.loader');

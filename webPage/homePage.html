@@ -11,7 +11,8 @@
         <!-- import -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" > 
-      
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
@@ -239,8 +240,19 @@
                 <div class="progress-bar-tooltip"></div>
             </div>
             <div id="time"><span class="current-time">0:00</span>&nbsp;/&nbsp;<span class="total-time">0:00</span></div>
+            
+            <div class="volume-slider">
+                <i class="fas fa-volume-down"></i>
+                <input type="range" min="0" max="100" value="100" class="slider vertical" id="volumeSlider">
+                <i class="fas fa-volume-up"></i>
+              </div>
+              
+
         </div>
+
         <audio id="audioPlayer" src=""></audio>
+
+
     </div>
   
     <div class="cursor"> </div>
