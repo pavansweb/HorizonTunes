@@ -243,7 +243,7 @@ function playSelectedSong(songSrc, imageSrc, songCategory) {
 
     // Create a div for displaying song category
     const categoryDiv = document.createElement('div');
-    categoryDiv.className = 'songInfo';
+    categoryDiv.className = 'songInfo song-category';
     categoryDiv.textContent = `Category: ${songCategory}`;
 
     // Insert the category div below the music image
@@ -258,12 +258,12 @@ function playSelectedSong(songSrc, imageSrc, songCategory) {
 
     // Create a div for displaying song author
     const authorDiv = document.createElement('div');
-    authorDiv.className = 'songInfo';
+    authorDiv.className = 'songInfo song-author';
 
     if (foundSong.author == " ") {
-        authorDiv.textContent = `Author: ${'Unknown'}`;
+        authorDiv.textContent = `Artist: ${'Unknown'}`;
     } else {
-        authorDiv.textContent = `Author: ${foundSong.author || 'Unknown'}`;
+        authorDiv.textContent = `Artist: ${foundSong.author || 'Unknown'}`;
     }
 
     // Insert the author div below the category div
@@ -278,7 +278,7 @@ function playSelectedSong(songSrc, imageSrc, songCategory) {
 
     // Create a div for displaying song title
     const titleDiv = document.createElement('div');
-    titleDiv.className = 'songInfo';
+    titleDiv.className = 'songInfo song-title';
     titleDiv.textContent = `Song Name: ${foundSong.title || 'Unknown'}`;
 
     // Insert the title div below the song image
@@ -291,15 +291,17 @@ function playSelectedSong(songSrc, imageSrc, songCategory) {
     console.log("Played selected song");
 }
 
-
-    
-
 // Add an event listener for the 'ended' event on the audioPlayer
 audioPlayer.addEventListener('ended', function() {
+
+   
+    console.log("Audio playback ended."); // Check if the event listener is triggered
+
     // Get the current category from the displayed category div
     const currentCategoryDiv = document.querySelector('.song-category');
     if (currentCategoryDiv) {
         const currentCategory = currentCategoryDiv.textContent.replace('Category: ', '').trim();
+        console.log("Current Category:", currentCategory); // Log the retrieved current category
 
         // Play a random song from the same category
         playRandomSongFromCategory(currentCategory);
@@ -326,22 +328,27 @@ function playRandomSongFromCategory(category) {
             break;
         default:
             // Handle other categories or provide a default array
+            console.log("Unknown category:", category);
             break;
     }
 
     // Check if there are songs in the category array
-    if (categoryArray.length > 0) {
+    if (categoryArray && categoryArray.length > 0) {
         // Get a random index
         const randomIndex = Math.floor(Math.random() * categoryArray.length);
+        console.log("Random Index:", randomIndex);
 
         // Get the random song from the array
         const randomSong = categoryArray[randomIndex];
+        console.log("Random Song:", randomSong);
 
         // Play the random song
         playSelectedSong(randomSong.src, randomSong.image, category);
 
         // Update the currently playing category div
         updatePlayingCategory(category);
+    } else {
+        console.log("No songs found in category:", category);
     }
 }
 
@@ -357,6 +364,7 @@ function updatePlayingCategory(category) {
 
     // Update the text content of the playing category div
     playingCategoryDiv.textContent = `Playing songs from same category: ${category}`;
+    console.log("Playing category updated:", category);
 }
 
 
