@@ -13,7 +13,7 @@ const songDatabase = [
     { title: "FIFTY FIFTY - Cupid ", src: "https://pavansweb.github.io/songs/FIFTY%20FIFTY%20-%20Cupid.mp3", image: "https://upload.wikimedia.org/wikipedia/en/a/a6/Fifty_Fifty_-_The_Beginning_Cupid.png", category: "Romantic Songs", author :" " },
     { title: "GigaChad", src: "https://pavansweb.github.io/songs/GigaChad.mp3", image: "https://i1.sndcdn.com/avatars-cyOmdd2Qj9sUWzjn-Zv2vgQ-t500x500.jpg", category: "Phonk Songs", author :" " },
     { title: "Kesariya", src: "https://pavansweb.github.io/songs/Kesariya.mp3", image: "https://qph.cf2.quoracdn.net/main-qimg-a91c535a3465efbb4080ddd8185874f6-lq", category: "Hollywood Songs", author :" " },
-    { title: "Live Another Day", src: "https://pavansweb.github.io/songs/Live%20Another%20Day.mp3", image: "https://i1.sndcdn.com/artworks-xIKYFG7WxtMucLZg-WXHkEw-t500x500.jpg", category: "Phonk Songs", author :" " },
+ //   { title: "Live Another Day", src: "https://pavansweb.github.io/songs/Live%20Another%20Day.mp3", image: "https://i1.sndcdn.com/artworks-xIKYFG7WxtMucLZg-WXHkEw-t500x500.jpg", category: "Phonk Songs", author :" " },
     { title: "Malang Sajna", src: "https://pavansweb.github.io/songs/Malang%20Sajna.mp3", image: "https://i.ytimg.com/vi/Xd8Fazf-Z3Q/maxresdefault.jpg", category: "Hollywood Songs", author :" " },
     { title: "Melting", src: "https://pavansweb.github.io/songs/Melting.mp3", image: "https://i.ytimg.com/vi/0nZtsF-p40E/maxresdefault.jpg", category: "English Songs", author :" " },
     { title: "Metamorphisis", src: "https://pavansweb.github.io/songs/Metamorphisis.mp3", image: "https://c.saavncdn.com/221/METAMORPHOSIS-English-2021-20220215012012-500x500.jpg", category: "Phonk Songs", author :" " },
