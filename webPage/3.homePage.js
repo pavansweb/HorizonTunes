@@ -225,8 +225,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function Switch() {
     musicPlayer.style.display = "grid";
     songContainer.style.display = "none";
-    body.style.backgroundColor = "#121212";
-    playingCategoryDiv.remove();
 
     backArrow.style.display = "block";
 
