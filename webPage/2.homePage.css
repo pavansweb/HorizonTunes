@@ -605,7 +605,6 @@ h2{
 }
 
 #bottomPlayerText{
-  
   font-weight: 600;
   text-shadow: 0 0 10px  #37FF8B;
 
@@ -719,9 +718,7 @@ h2{
       width: 100%;
     }
 
-
-  
-  
+    
 
 }
 
@@ -779,7 +776,18 @@ h2{
       width: 20%;
     }
 
-    
+    .bottomPlayer{
+      width: 50%;
+      left: 25%;
+      padding: 20px 40px;
+      font-size: 1.5rem;
+      box-shadow: none;
+      animation: none;
+      border: 4px solid #37FF8B;
+    }
+    #bottomPlayerImg{
+      max-width: 3rem;
+    }
 }
 
 

@@ -1,279 +1,262 @@
-
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>HORIZON TUNES</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="2.homePage.css">
-    <link rel="icon" href="https://i.imgur.com/V1gIGAi.jpg" type="image/x-icon" style="border-radius: 50% ;">
-        <!-- import -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" > 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="2.homePage.css" />
+    <link rel="icon" href="https://i.imgur.com/V1gIGAi.jpg" type="image/x-icon" style="border-radius: 50%" />
+    <!-- import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 
 <body>
-
     <nav class="navbar">
-
-        <a id="title" class="backHome"> HORIZON &nbsp;TUNES  </a>
-        <a class="backHome" > HOME</a>
-        <a href="https://www.instagram.com/p_a_v_a_n_8_8_8_?igsh=ejd4emNleHNkdzFo"> CONTACT </a>
-        <a href="https://pavansweb.github.io/UwU/webPage/4.profile.html" > PROFILE </a>
-        <a href="https://pavansweb.github.io/UwU/webPage/4.profile.html"> <i class="fas fa-user-circle" style="font-size: 20px;" ></i> </a>
-
+        <a id="title" class="backHome"> HORIZON &nbsp;TUNES </a>
+        <a class="backHome"> HOME</a>
+        <a href="https://www.instagram.com/p_a_v_a_n_8_8_8_?igsh=ejd4emNleHNkdzFo">
+            CONTACT
+        </a>
+        <a href="https://pavansweb.github.io/UwU/webPage/4.profile.html">
+            PROFILE
+        </a>
+        <a href="https://pavansweb.github.io/UwU/webPage/4.profile.html">
+            <i class="fas fa-user-circle" style="font-size: 20px"></i>
+        </a>
     </nav>
-  
-   
+
     <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>`
-        </label>
-    
+        <label class="menu__btn" for="menu__toggle"> <span></span>` </label>
+
         <ul class="menu__box">
-          <li><a class="menu__item" href="#"><img src="https://i.imgur.com/V1gIGAi.jpg"  ></a></li>
-          <li><a class="menu__item backHome"> Home    <span>&#127968;</span></a></li>
-          <li><a class="menu__item" href="https://pavansweb.github.io/UwU/webPage/4.profile.html">Profile  <span>&#128100;</span></a></li>
-          <li><a class="menu__item" href="#" id="hiddenMsg"> Hidden message - drink water<span>  </span></a></li>
-          <li><a class="menu__item" href="https://www.instagram.com/p_a_v_a_n_8_8_8_?igsh=ejd4emNleHNkdzFo">Contact   <span class="fa fa-phone"></span> </a></li>
-          <li><a class="menu__item" href="https://www.instagram.com/p_a_v_a_n_8_8_8_?igsh=ejd4emNleHNkdzFo">Instagram <span class="fab fa-instagram"></span></a></li>
+            <li>
+                <a class="menu__item" href="#"><img src="https://i.imgur.com/V1gIGAi.jpg" /></a>
+            </li>
+            <li>
+                <a class="menu__item backHome"> Home <span>&#127968;</span></a>
+            </li>
+            <li>
+                <a class="menu__item" href="https://pavansweb.github.io/UwU/webPage/4.profile.html">Profile
+                    <span>&#128100;</span></a>
+            </li>
+            <li>
+                <a class="menu__item" href="#" id="hiddenMsg">
+                    Hidden message - drink water<span> </span></a>
+            </li>
+            <li>
+                <a class="menu__item" href="https://www.instagram.com/p_a_v_a_n_8_8_8_?igsh=ejd4emNleHNkdzFo">Contact
+                    <span class="fa fa-phone"></span>
+                </a>
+            </li>
+            <li>
+                <a class="menu__item" href="https://www.instagram.com/p_a_v_a_n_8_8_8_?igsh=ejd4emNleHNkdzFo">Instagram
+                    <span class="fab fa-instagram"></span></a>
+            </li>
         </ul>
-     </div>
-        
-    
-     &nbsp;
+    </div>
+
+    &nbsp;
     <div id="container">
-    <div class="search-bar">
-        <input autocomplete="off" placeholder="Search Songs here..." type="text" id="songSearch" oninput="handleSearchInput()">
-        <button type="button">&#128269; </button>
-        <div class="search-results" id="searchResults"></div>
+        <div class="search-bar">
+            <input autocomplete="off" placeholder="Search Songs here..." type="text" id="songSearch"
+                oninput="handleSearchInput()" />
+            <button type="button">&#128269;</button>
+            <div class="search-results" id="searchResults"></div>
+        </div>
+
+        <div class="song-container">
+            <div>
+                <h2>Top Songs</h2>
+                <div class="song-scroll" id="phonk">
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 1</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 2</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 3</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 4</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 5</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 6</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 7</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 8</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2>Top Songs</h2>
+                <div class="song-scroll" id="english">
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 1</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 2</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 3</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 4</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 5</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 6</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 7</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 8</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2>Top Songs</h2>
+                <div class="song-scroll" id="romantic">
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 1</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 2</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 3</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 4</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 5</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 6</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 7</p>
+                    </div>
+
+                    <div class="song-box" data-src="">
+                        <div class="song-img"></div>
+                        <p class="song-title">Song 8</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="music-player">
+            <a class="backHome" id="backArrow">
+                <i class="fa-solid fa-arrow-left"></i></a>
+            <div class="loader">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <div class="bar4"></div>
+                <div class="bar5"></div>
+
+                <label for="audioPlayer">Loading</label>
+            </div>
+
+            <img id="playerImg" src="https://i.imgur.com/kdO25Qu.jpg" alt="Music Image" />
+
+            <div class="player-controls">
+                <a class="playBtn" onclick="togglePlayPause()">
+                    <span class="playBtnspan">Play</span>
+                </a>
+                <div class="progress-bar-container">
+                    <div class="progress-bar"></div>
+                    <div class="progress-bar-tooltip"></div>
+                </div>
+                <div id="time">
+                    <span class="current-time">0:00</span>&nbsp;/&nbsp;<span class="total-time">0:00</span>
+                </div>
+
+                <div class="volume-slider">
+                    <i class="fas fa-volume-down"></i>
+                    <input type="range" min="0" max="100" value="100" class="slider vertical" id="volumeSlider" />
+                    <i class="fas fa-volume-up"></i>
+                </div>
+            </div>
+
+            <audio id="audioPlayer" src=""></audio>
+        </div>
     </div>
 
-    <div class="song-container">
+    <div class="bottomPlayer">
+        <a id="backArrowBottom"> <i class="fa-solid fa-arrow-left"></i></a>
+        <p id="bottomPlayerText">Song name</p>
 
-     
-        <div>
-            <h2>Top Songs</h2>
-            <div class="song-scroll" id="phonk">
-               
-                
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 1</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 2</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 3</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 4</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 5</p>
-                </div>
+        <i class="fas fa-chevron-left bottomPlayerPrevious"></i>
+        <a id="bottomPlayerPlayBtn"><span class="playBtnspan" style="font-size: 2.5rem">▶</span>
+        </a>
+        <i class="fas fa-chevron-right bottomPlayerNext"></i>
 
-
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 6</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 7</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 8</p>
-                </div>
-    
-              
-            </div>
-        </div>
-    
-     
-        <div>
-            <h2>Top Songs</h2>
-            <div class="song-scroll" id="english">
-              
-                
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 1</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 2</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 3</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 4</p>
-                </div>
-
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 5</p>
-                </div>
-
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 6</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 7</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 8</p>
-                </div>
-    
-              
-
-            </div>
-        </div>
-    
-        
-        <div>
-            <h2>Top Songs</h2>
-            <div class="song-scroll" id="romantic">
-                
-                
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 1</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 2</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 3</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 4</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 5</p>
-                </div>
-
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 6</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 7</p>
-                </div>
-    
-                <div class="song-box" data-src="">
-                    <div class="song-img"></div>
-                    <p class="song-title">Song 8</p>
-                </div>
-
-
-
-            </div>
-        </div>
-    
-       
-    
+        <image src="https://i.imgur.com/kdO25Qu.jpg" id="bottomPlayerImg"></image>
     </div>
-    
-    
 
-
-    <div class="music-player">
-    <a class="backHome" id="backArrow"> <i class="fa-solid fa-arrow-left"></i></a>
-        <div class="loader">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            <div class="bar4"></div>
-            <div class="bar5"></div>
-    
-            <label for="audioPlayer">Loading</label>
-        </div>
-    
-        <img id="playerImg" src="https://i.imgur.com/kdO25Qu.jpg" alt="Music Image">
-    
-        <div class="player-controls">
-            <a class="playBtn" onclick="togglePlayPause()">
-                <span class="playBtnspan">Play</span>
-            </a>
-            <div class="progress-bar-container">
-                <div class="progress-bar"></div>
-                <div class="progress-bar-tooltip"></div>
-            </div>
-            <div id="time"><span class="current-time">0:00</span>&nbsp;/&nbsp;<span class="total-time">0:00</span></div>
-            
-            <div class="volume-slider">
-                <i class="fas fa-volume-down"></i>
-                <input type="range" min="0" max="100" value="100" class="slider vertical" id="volumeSlider">
-                <i class="fas fa-volume-up"></i>
-              </div>
-              
-
-        </div>
-
-        <audio id="audioPlayer" src=""></audio>
-
-
-    </div>
-  
-    <div class="cursor"> </div>
-
-</div>
-
-   
-<div class="bottomPlayer">
-
-    <a  id="backArrowBottom"> <i class="fa-solid fa-arrow-left"></i></a>
-    <p id="bottomPlayerText">Song name</p>
-   
-    <i class="fas fa-chevron-left bottomPlayerPrevious" ></i>
-    <a id="bottomPlayerPlayBtn"><span class="playBtnspan" style="font-size: 2.5rem;">▶</span> </a>
-    <i class="fas fa-chevron-right bottomPlayerNext"></i>
-
-    <image src="https://i.imgur.com/kdO25Qu.jpg" id="bottomPlayerImg"></image>   
- 
-   </div>
-   
     <script type="module" src="3.homePage.js"></script>
     <script type="module" src="songsDatabase.js"></script>
-
 </body>
 
 </html>

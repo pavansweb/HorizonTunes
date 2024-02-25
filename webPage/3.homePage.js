@@ -206,7 +206,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function reverseSwitch() {
     musicPlayer.style.display = "none";
     songContainer.style.display = "grid";
-    body.style.backgroundImage = "none";
 
     backArrow.style.display = "none";
     backArrowBottom.style.display = "block";
@@ -558,26 +557,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   audioPlayer.addEventListener("waiting", () => {
     loadingSpinner.style.display = "block";
-  });
-
-  //</loading>
-
-  //cool cursor
-  const cursor = document.querySelector(".cursor");
-
-  document.addEventListener("mousemove", (e) => {
-    cursor.setAttribute(
-      "style",
-      "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
-    );
-  });
-
-  document.addEventListener("click", () => {
-    cursor.classList.add("expand");
-
-    setTimeout(() => {
-      cursor.classList.remove("expand");
-    }, 500);
   });
 
   //<the end?>
