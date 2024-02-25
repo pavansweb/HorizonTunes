@@ -207,7 +207,6 @@ document.addEventListener("DOMContentLoaded", function () {
     musicPlayer.style.display = "none";
     songContainer.style.display = "grid";
     body.style.backgroundImage = "none";
-    body.style.backgroundColor = "black";
 
     backArrow.style.display = "none";
     backArrowBottom.style.display = "block";
