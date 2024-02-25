@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const body = document.getElementsByTagName("body")[0];
   const backHome = document.querySelectorAll(".backHome");
   const backArrow = document.getElementById("backArrow");
+  const songDownloadBtn = document.querySelector(".songDownloadBtn");
   const bottomPlayer = document.querySelector(".bottomPlayer");
   const backArrowBottom = document.getElementById("backArrowBottom");
   const bottomPlayerText = document.getElementById("bottomPlayerText");
@@ -50,6 +51,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchResults = document.querySelector(".search-results");
     const sidebar = document.querySelector(".menu__box");
 
+    songDownloadBtn.addEventListener("click", downloadSong);
+    function downloadSong() {
+      // Get the source of the currently playing song
+      const currentSongSrc = audioPlayer.src;
+
+      // Redirect to the download link (same as the current song's src)
+      window.location.href = currentSongSrc;
+    }
+
     // Check if the click is outside the search bar and results
     if (
       !searchBar.contains(event.target) &&
@@ -72,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .classList.toggle("music-player-rotate");
   });
 
-  const songScrollContainer = document.getElementById("phonk"); // Assuming 'phonk' is the ID of the song scroll container
+  const songScrollContainer = document.getElementById("phonk");
 
   function scrollSongBoxes() {
     // Scroll to the next position
@@ -225,6 +235,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function Switch() {
     musicPlayer.style.display = "grid";
     songContainer.style.display = "none";
+    body.style.backgroundColor = "#121212";
 
     backArrow.style.display = "block";
 
