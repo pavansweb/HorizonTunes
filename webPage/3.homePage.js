@@ -226,6 +226,7 @@ document.addEventListener("DOMContentLoaded", function () {
     musicPlayer.style.display = "grid";
     songContainer.style.display = "none";
     body.style.backgroundColor = "#121212";
+    playingCategoryDiv.remove();
 
     backArrow.style.display = "block";
 
@@ -419,7 +420,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Update the text content of the playing category div
-    playingCategoryDiv.textContent = `Playing songs from same category: ${category}`;
+    playingCategoryDiv.textContent = `Playing songs from category: ${category}`;
 
     // Delete the div after 10 seconds
     setTimeout(() => {
