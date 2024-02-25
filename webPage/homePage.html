@@ -18,8 +18,8 @@
 <body>
 
     <nav class="navbar">
-        
-        <a id="title" href="https://pavansweb.github.io/UwU/webPage/homePage.html"> HORIZON &nbsp;TUNES  </a>
+
+        <a id="title" class="backHome"> HORIZON &nbsp;TUNES  </a>
         <a href="https://pavansweb.github.io/UwU/webPage/homePage.html" > HOME</a>
         <a href="https://www.instagram.com/p_a_v_a_n_8_8_8_?igsh=ejd4emNleHNkdzFo"> CONTACT </a>
         <a href="https://pavansweb.github.io/UwU/webPage/4.profile.html" > PROFILE </a>
@@ -45,7 +45,6 @@
      </div>
         
     
-        
      &nbsp;
     <div id="container">
     <div class="search-bar">
@@ -216,9 +215,8 @@
     
 
 
-    
-
     <div class="music-player">
+    <a class="backHome" id="backArrow"> <i class="fa-solid fa-arrow-left"></i></a>
         <div class="loader">
             <div class="bar1"></div>
             <div class="bar2"></div>
@@ -258,9 +256,21 @@
     <div class="cursor"> </div>
 
 </div>
-</div>
-    
 
+   
+<div class="bottomPlayer">
+
+    <a  id="backArrowBottom"> <i class="fa-solid fa-arrow-left"></i></a>
+    <p id="bottomPlayerText">Song name</p>
+   
+    <i class="fas fa-chevron-left bottomPlayerPrevious" ></i>
+    <a id="bottomPlayerPlayBtn"><span class="playBtnspan" style="font-size: 2.5rem;">▶</span> </a>
+    <i class="fas fa-chevron-right bottomPlayerNext"></i>
+
+    <image src="https://i.imgur.com/kdO25Qu.jpg" id="bottomPlayerImg"></image>   
+ 
+   </div>
+   
     <script type="module" src="3.homePage.js"></script>
     <script type="module" src="songsDatabase.js"></script>
 
