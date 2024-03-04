@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Horizon Tunes</title>
+    <link rel="icon" href="https://i.imgur.com/V1gIGAi.jpg" type="image/jpeg">
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+        background-color: #f5f5f5; 
+      }
+      .container {
+        position: relative;
+        max-width: 600px;
+        text-align: center;
+      }
+      .video-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      .video-content {
+        position: relative;
+        z-index: 1;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #333;
+        font-size: 36px;
+        margin-bottom: 20px;
+      }
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ee2a7b;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 18px;
+        margin: 10px;
+        transition: background-color 0.3s ease;
+      }
+      .button:hover {
+        background-color: #d6135a;
+      }
+      .description {
+        margin-top: 60px;
+        color: black;
+      }
+      .app-info {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .description img {
+        width: 150px;
+        margin-bottom: 10px;
+        border-radius: 50%;
+      }
+      @media (max-width: 600px) {
+        .description img {
+          width: 100px;
+        }
+        .app-info {
+          margin-top: 10px;
+          color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <video autoplay loop muted class="video-background">
+        <source src="https://i.imgur.com/c4Woekz.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="video-content">
+        <h1>Welcome to Horizon Tunes</h1>
+        <a href="https://pavansweb.github.io/UwU/webPage/homePage.html" class="button">Continue to Website</a>
+        <div class="description">
+          <img
+            src="https://i.imgur.com/V1gIGAi.jpg"
+            alt="Horizon Tunes App Icon"
+          />
+          <p>
+            Download our app (it's completely safe) and enjoy unlimited music
+            anytime, anywhere.
+          </p>
+        </div>
+        <div class="app-info">
+          <a href="#" class="button">Download App</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
