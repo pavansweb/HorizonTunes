@@ -35,10 +35,8 @@ const songDatabase = [
   { title: "Time Traveller", src: "https://pavansweb.github.io/songs/Time%20Traveller.mp3", image: "https://i.ytimg.com/vi/RoQU0wfZ5Uk/sddefault.jpg", category: "English Songs", author :" " },
   { title: "Mocking Bird", src: "https://pavansweb.github.io/songs/Mocking%20Bird.mp3", image: "https://i1.sndcdn.com/artworks-tytpb8oaL5Wb9uIU-4YH59g-t500x500.jpg"},
 { title: "Cheri Cheri Lady", src: "https://pavansweb.github.io/songs/Cheri%20Cheri%20Lady.mp3", image: "https://i1.sndcdn.com/artworks-qZ1KWUIeNp3yzVtF-iSwgXQ-t500x500.jpg", category: "Romantic", author: "Modern Talking" },
-{ title: "testin3", src: "https://pavansweb.github.io/songs/testin3.mp3", image: "https://m.media-amazon.com/images/I/51XbfCOALnL.jpg", category: "Phonk", author: "Song Author..." },
-{ title: "testin5", src: "https://pavansweb.github.io/songs/testin5.mp3", image: "https://m.media-amazon.com/images/I/51XbfCOALnL.jpg", category: "Romantic", author: "Song Author..." },
-{ title: "testin6", src: "https://pavansweb.github.io/songs/testin6.mp3", image: "https://m.media-amazon.com/images/I/51XbfCOALnL.jpg", category: "Romantic", author: "Song Author..." },
-{ title: "testin7", src: "https://pavansweb.github.io/songs/testin7.mp3", image: "https://m.media-amazon.com/images/I/51XbfCOALnL.jpg", category: "Phonk", author: "Song Author..." },
+{ title: "testin2", src: "https://pavansweb.github.io/songs/testin2.mp3", image: "https://m.media-amazon.com/images/I/51XbfCOALnL.jpg", category: "Phonk", author: "Song Author..." },
+{ title: "testing 6", src: "https://pavansweb.github.io/songs/testing%206.mp3", image: "https://devops.com/wp-content/uploads/2020/04/Shift-Right-Testing-_TestOps-1280x720.jpg", category: "Romantic", author: "Song author" },
 
 ];
 
